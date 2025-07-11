@@ -1,0 +1,186 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#navbar a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+#navbar a:hover::after {
+    width: 100%;
+}
+
+/* Seções alternadas */
+section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.secao-esquerda {
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+
+.secao-direita {
+    background-color: #f0f0f0;
+    text-align: right;
+}
+
+.secao-direita .conteudo {
+    align-items: flex-end;
+}
+
+/* Títulos e textos */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 5px;
+}
+
+section p, section li {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#projetos ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Ícones e imagem */
+i {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section li {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+#contatos {
+    background-color: black;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contatos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#contatos p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#contatos a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#contatos a:hover {
+    text-decoration: underline;
+}
