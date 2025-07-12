@@ -41,6 +41,7 @@ body {
     text-decoration: none;
 }
 
+
 #navbar a::after {
     content: "";
     position: absolute;
@@ -103,6 +104,14 @@ section p, section li {
 #projetos ul {
     list-style-type: square;
     padding-left: 20px;
+}
+
+#projetos li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Botão */
@@ -184,3 +193,48 @@ i {
 #contatos a:hover {
     text-decoration: underline;
 }
+
+/* Estilo para a seção de certificados */
+#certificados table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificados td {
+    padding: 20px;
+    text-align: center;
+}
+
+#certificados p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+#certificados img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#certificados img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #certificados img {
+        max-width: 90%;
+    }
+
+    #certificados p {
+        font-size: 1rem;
+    }
+}
+
