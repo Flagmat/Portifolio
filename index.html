@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Kauã Farias - Desenvolvedor Web Front-End e Back-End.">
-    <meta name="author" content="Kauã Farias">
+    <meta property="og:title" content="Portfólio de Kauã Farias">
+    <meta property="og:description" content="Desenvolvedor Web Front-End e Back-End. Veja meus projetos, competências e certificações.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -15,6 +17,7 @@
     <header id="cabecalho">
         <nav id="navbar">
                 <a href="#sobre_mim"><i class="fas fa-user"></i>Sobre Mim</a>
+                <a href="#competencias"><i class="fas fa-lightbulb"></i>Competências</a>
                 <a href="#projetos"><i class="fas fa-code"></i>Projetos</a>
                 <a href="#certificados"><i class="fas fa-certificate"></i>Certificados</a>
                 <a href="#contatos"><i class="fas fa-envelope"></i>Contatos</a>
@@ -25,7 +28,7 @@
         <section id="sobre_mim" class="secao-esquerda" data-aos="fade-right">
             <div class="conteudo">
                 <h2><i class="fas fa-user"></i> Sobre Mim</h2>
-                <img src="avatar principal dc.jpg" alt="Foto de Kauã Farias" class="foto-perfil">
+                <img src="avatar.png" alt="Foto de Kauã Farias" class="foto-perfil">
                 <p>
                     Olá! Meu nome é Kauã Farias, sou desenvolvedor web com foco em Front-End/Back-End.
                     Tenho experiência com tecnologias como HTML, CSS, JavaScript e PHP. Apaixonado por criar soluções funcionais
@@ -34,7 +37,20 @@
             </div>
         </section>
 
-        <section id="projetos" class="secao-direita" data-aos="fade-left">
+        <section id="competencias" class="secao-direita" data-aos="fade-left">
+                <div class="conteudo">
+                    <h2><i class="fas fa-lightbulb"></i> Competências</h2>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>PHP com MySQL</li>
+                        <li>Java</li>
+                        <li>Controle de versão com Git/GitHub</li>
+                        <li>Conhecimento em lógica de programação</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section id="projetos" class="secao-esquerda" data-aos="fade-left">
             <div class="conteudo">
                 <h2><i class="fas fa-code"></i> Projetos</h2>
                 <ul>
@@ -46,7 +62,7 @@
             </div>
         </section>
 
-        <section id="certificados" class="secao-esquerda" data-aos="fade-right">
+        <section id="certificados" class="secao-direita" data-aos="fade-right">
             <div class="conteudo">
                 <h2><i class="fas fa-certificate"></i>Certificações</h2>
                 <table>

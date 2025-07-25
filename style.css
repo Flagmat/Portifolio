@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* Cabeçalho */
 #cabecalho {
     background-color: #fff;
@@ -61,6 +62,21 @@ body {
 section {
     width: 100%;
     padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+#sobre_mim{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+#competencias li:hover {
+    color: #555;
+    transform: translateX(5px);
+    transition: 0.3s;
 }
 
 .conteudo {
@@ -81,6 +97,7 @@ section {
 
 .secao-direita {
     background-color: #f0f0f0;
+    color: #333;
     text-align: right;
 }
 
@@ -102,16 +119,22 @@ section p, section li {
 }
 
 #projetos ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
 }
 
 #projetos li {
-    background-color: white;
+    background-color: black;
     padding: 15px;
     border-radius: 8px;
     margin: 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#projetos li::before {
+    content: "▶"; 
+    margin-right: 10px;
+    color: white;
 }
 
 /* Botão */
@@ -119,11 +142,12 @@ section p, section li {
     display: inline-block;
     margin-top: 8px;
     padding: 6px 12px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 4px;
     font-size: 0.95rem;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -142,27 +166,6 @@ i {
     border-radius: 50%;
     object-fit: cover;
     margin: 20px 0;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .conteudo {
-        align-items: center !important;
-        text-align: center !important;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section p, section li {
-        font-size: 1rem;
-    }
-
-    .foto-perfil {
-        width: 120px;
-        height: 120px;
-    }
 }
 
 #contatos {
@@ -229,12 +232,49 @@ i {
 
 /* Responsivo */
 @media (max-width: 768px) {
+    .conteudo {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section li {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
     #certificados img {
         max-width: 90%;
     }
 
     #certificados p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .conteudo {
+        padding: 0 10px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
     }
 }
 
